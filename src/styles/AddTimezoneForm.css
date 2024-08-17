@@ -1,0 +1,61 @@
+.add-timezone-form {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    color: rgb(42, 13, 58);
+}
+
+.add-timezone-form form {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color, #f9f9f9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.add-timezone-form select {
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+}
+
+
+
+.add-timezone-form button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .add-timezone-form form {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .add-timezone-form select {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .add-timezone-form button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
